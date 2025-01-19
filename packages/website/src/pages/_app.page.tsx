@@ -26,7 +26,7 @@ function isSettingsContext(item: Partial<SettingsContext>): item is SettingsCont
 
 export default function MyApp({ Component, pageProps }: AppProps<PageProps>) {
   const { lngDict, settingsContext = {}, ...rest } = pageProps
-
+  console.log("josh");
   if (!isSettingsContext(settingsContext)) {
     return (
       <Component {...rest} />
